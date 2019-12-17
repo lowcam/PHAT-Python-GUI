@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
-# CLI Python Version
-# v 1.0
+# GUI Python Version
+# v 0.1
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -17,6 +17,7 @@
 # Python3
 # Python3-tk
 # Use pip3 to install base58
+# Use pip3 to install appJar
 #
 # (C) 2019 Lorne Cammack, USA
 # email lowcam.socailvideo@gmail.com
