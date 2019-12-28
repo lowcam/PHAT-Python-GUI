@@ -133,12 +133,3 @@ app.setFocus("TextString")
 
 # start the GUI
 app.go()
-
-#Print license at the beginning of the file
-#def printLicense():
-#    print ("")
-#    print ("PHAT Copyright (C) 2019 Lorne Cammack")
-#    print ("This program comes with ABSOLUTELY NO WARRANTY;")
-#    print ("This is free software, and you are welcome to redistribute it")
-#    print ("under certain conditions. See https://www.gnu.org/licenses/ for more details.")
-#    print ("")
