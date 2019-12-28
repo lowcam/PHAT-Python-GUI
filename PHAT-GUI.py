@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # GUI Python Version
-# v 0.2
+# v 0.3
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -43,13 +43,15 @@ import base58
 from tkinter import Tk
 
 # create a GUI variable called app
-app = gui("PHAT v0.2", "500x500")
+app = gui("PHAT v0.3", "500x500")
 app.setBg("white")
 app.setFont(10)
 
 def press(button):
     if button == "Exit":
         app.stop()
+    elif button == "About":
+        app.infoBox("About PHAT", "PHAT (Password Hashing Algorithm Tool) Copyright (C) 2019 Lorne Cammack. This program comes with ABSOLUTELY NO WARRANTY; This is free software, and you are welcome to redistribute it under certain conditions. See https://www.gnu.org/licenses/ for more details.", parent=None)
     elif button == "Copy Result":
         copytext = app.getTextArea("calcResultMessage")
         r = Tk()
@@ -125,8 +127,7 @@ app.showScaleValue("restrictDigitScale", show=True)
 app.addLabel("calcResult", "Calc Result")
 app.addTextArea("calcResultMessage")
 app.setTextArea("calcResultMessage", "Push the Calc Button to See the Result")
-#app.setEntryDefault("CalcResult", "Push the Calc Button to See the Result")
-app.addButtons(["Calculate", "Copy Result", "Exit"], press)
+app.addButtons(["Calculate", "Copy Result", "About", "Exit"], press)
 app.setFocus("TextString")
 
 
