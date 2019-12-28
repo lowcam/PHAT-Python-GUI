@@ -1,8 +1,8 @@
 This is the project plan for the Password Hash Calc in Python GUI.
 
-v 0.1 Copy the PHAT-Python-CLI and rename it to PHAT-Python-GUI.
+v 0.1 Copy the PHAT-Python-CLI and rename it to PHAT-Python-GUI. (COMPLETED)
 
-v 0.2 Get the form working through appJar. Should have all the functionality of the original CLI.
+v 0.2 Get the form working through appJar. Should have all the functionality of the original CLI. (COMPLETED 12/27/2019)
 
 v 0.3 Get a About dropdown/button that has info from introcution of CLI.
 
