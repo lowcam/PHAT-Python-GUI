@@ -116,7 +116,7 @@ def press(button):
             app.setTextArea("calcResultMessage", OutputPrintConcat)
 
 # add & configure widgets - widgets get a name, to help referencing them later
-app.addLabel("title", "PHAT v0.3")
+app.addLabel("title", "PHAT v1.0")
 app.setLabelBg("title", "green")
 app.addLabelEntry("TextString")
 app.setEntryBg("TextString","#202020")
