@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
-# PHAT  - Password Hashing Algorithm Tool
+# PHAT  - Password Hashing Algorithm Tool Dark Theme
 # GUI Python Version
-# v 0.4
+# v 0.5
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -44,8 +44,8 @@ from tkinter import Tk
 
 # create a GUI variable called app
 app = gui("PHAT v0.3", "500x500")
-app.setBg("#e0d6b4")
-app.setFg("black")
+app.setBg("black")
+app.setFg("#c6c6c6")
 app.setFont(10)
 app.showSplash("PHAT (Password Hashing Algorithm Tool)", fill='black', stripe='black', fg='white', font=44)
 
@@ -116,21 +116,27 @@ def press(button):
 app.addLabel("title", "PHAT v0.3")
 app.setLabelBg("title", "green")
 app.addLabelEntry("TextString")
-app.setEntryBg("TextString","#d5c798")
+app.setEntryBg("TextString","#202020")
+app.setEntryFg("TextString","#c6c6c6")
 app.addLabelOptionBox("SHA", ["256", "384", "512"])
 app.addLabelOptionBox("NumberSystem", ["Hex", "Base64", "Base58"])
 app.addLabel("restrictDigits", "Restrict the Number of Output Digits?")
 app.addRadioButton("restrictDigitsYN", "Yes")
 app.addRadioButton("restrictDigitsYN", "No")
 app.setRadioButton("restrictDigitsYN", "No", callFunction=False)
+app.setRadioButtonBg("restrictDigitsYN","#202020")
+app.setRadioButtonFg("restrictDigitsYN","#787878")
 app.addLabel("restrictDigitScaleText", "Number of Output Digits")
 app.addScale("restrictDigitScale")
 app.setScaleRange("restrictDigitScale", 1, 128, curr=128)
+app.setScaleFg("restrictDigitScale", "#c6c6c6")
+app.setScaleBg("restrictDigitScale", "#202020")
 app.showScaleValue("restrictDigitScale", show=True)
 app.addLabel("calcResult", "Calc Result")
 app.addTextArea("calcResultMessage")
 app.setTextArea("calcResultMessage", "Push the Calc Button to See the Result")
-app.setTextAreaBg("calcResultMessage","#d5c798")
+app.setTextAreaBg("calcResultMessage","#202020")
+app.setTextAreaFg("calcResultMessage","#c6c6c6")
 app.addButtons(["Calculate", "Copy Result", "About", "Exit"], press)
 app.setFocus("TextString")
 
