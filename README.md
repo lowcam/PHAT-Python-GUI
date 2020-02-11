@@ -13,7 +13,9 @@ will be selectable in case a site can only have a certain number of digits
 in a password. The last step will be for the output to be copied to the
 clipboard so if can be pasted into the program or site.
 
-Required to use:
+Linux executibles are in the dist folder.
+
+Required to build:
 Python3; 
 Python3-tk; 
 Use pip to install base58;
