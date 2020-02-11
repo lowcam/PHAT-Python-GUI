@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # GUI Python Version
-# v 0.3
+# v 0.4
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -19,7 +19,7 @@
 # Use pip3 to install base58
 # Use pip3 to install appJar
 #
-# (C) 2019 Lorne Cammack, USA
+# (C) 2020 Lorne Cammack, USA
 # email lowcam.socailvideo@gmail.com
 # Released under GNU Public License (GPL) v3
 #    This program is free software: you can redistribute it and/or modify
@@ -44,8 +44,10 @@ from tkinter import Tk
 
 # create a GUI variable called app
 app = gui("PHAT v0.3", "500x500")
-app.setBg("white")
+app.setBg("#e0d6b4")
+app.setFg("black")
 app.setFont(10)
+app.showSplash("PHAT (Password Hashing Algorithm Tool)", fill='black', stripe='black', fg='white', font=44)
 
 def press(button):
     if button == "Exit":
@@ -111,9 +113,10 @@ def press(button):
             app.setTextArea("calcResultMessage", OutputPrintConcat)
 
 # add & configure widgets - widgets get a name, to help referencing them later
-app.addLabel("title", "PHAT v0.2")
-app.setLabelBg("title", "red")
+app.addLabel("title", "PHAT v0.3")
+app.setLabelBg("title", "green")
 app.addLabelEntry("TextString")
+app.setEntryBg("TextString","#d5c798")
 app.addLabelOptionBox("SHA", ["256", "384", "512"])
 app.addLabelOptionBox("NumberSystem", ["Hex", "Base64", "Base58"])
 app.addLabel("restrictDigits", "Restrict the Number of Output Digits?")
@@ -127,6 +130,7 @@ app.showScaleValue("restrictDigitScale", show=True)
 app.addLabel("calcResult", "Calc Result")
 app.addTextArea("calcResultMessage")
 app.setTextArea("calcResultMessage", "Push the Calc Button to See the Result")
+app.setTextAreaBg("calcResultMessage","#d5c798")
 app.addButtons(["Calculate", "Copy Result", "About", "Exit"], press)
 app.setFocus("TextString")
 
