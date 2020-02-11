@@ -19,6 +19,9 @@
 # Use pip3 to install base58
 # Use pip3 to install appJar
 #
+# Icon made by Freepik from www.flaticon.com
+#
+#
 # (C) 2020 Lorne Cammack, USA
 # email lowcam.socailvideo@gmail.com
 # Released under GNU Public License (GPL) v3
