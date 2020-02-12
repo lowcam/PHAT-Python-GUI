@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['PHAT-GUI_dark_theme.py'],
-             pathex=['/home/cammadmin/git/hashcalc-pythongui'],
+             pathex=['C:\\Users\\cammadmin\\Documents\\GitHub\\PHAT-Python-GUI'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -30,4 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , icon='padlock.png')
+          console=False , icon='padlock.ico')
