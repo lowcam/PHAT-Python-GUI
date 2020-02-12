@@ -13,7 +13,8 @@ will be selectable in case a site can only have a certain number of digits
 in a password. The last step will be for the output to be copied to the
 clipboard so if can be pasted into the program or site.
 
-Linux executibles are in the dist folder.
+Linux and Windows executibles are in the dist folder.
+I do not have a MAC or I would also have those executables.
 
 Required to build:
 Python3; 
