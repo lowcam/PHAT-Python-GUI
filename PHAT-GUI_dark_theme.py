@@ -50,7 +50,15 @@ app = gui("PHAT v1.1", "500x500")
 app.setBg("#0F2439")
 app.setFg("#9d968d")
 app.setFont(10)
+
+#-----------------------------------------------------------------
+# If using python and appjar in Windows uncomment the setIcon line
+# If using any other OS comment out the setIcon line
 app.setIcon("padlock.ico")
+#
+#
+#-----------------------------------------------------------------
+
 
 def press(button):
     if button == "Exit":
