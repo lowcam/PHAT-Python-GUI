@@ -1,7 +1,7 @@
 
 PHAT  - Password Hashing Algorithm Tool
 GUI Python Version
-v 1.0
+v 1.1
 
 The purpose of this tool is to let an individual enter text and have a hashed
 output to use as the password to the site or program. Initially the program
