@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # GUI Python Version
-# v 1.0
+# v 1.1
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -46,11 +46,11 @@ import base58
 from tkinter import Tk
 
 # create a GUI variable called app
-app = gui("PHAT v1.0", "500x500")
-app.setBg("#d5c798")
-app.setFg("black")
+app = gui("PHAT v1.1", "500x500")
+app.setBg("#6699CC")
+app.setFg("#000080")
 app.setFont(10)
-app.showSplash("PHAT (Password Hashing Algorithm Tool)", fill='black', stripe='black', fg='white', font=44)
+app.setIcon("padlock.ico")
 
 def press(button):
     if button == "Exit":
@@ -116,14 +116,18 @@ def press(button):
             app.setTextArea("calcResultMessage", OutputPrintConcat)
 
 # add & configure widgets - widgets get a name, to help referencing them later
-app.addLabel("title", "PHAT v1.0")
-app.setLabelBg("title", "green")
+app.addLabel("title", "PHAT v1.1")
+app.setLabelBg("title", "#000080")
+app.setLabelFg("title", "#CCDDEE")
 app.addLabelEntry("TextString")
-app.setEntryBg("TextString","#e0d6b4")
+app.setEntryBg("TextString","#CDDDEE")
+app.setEntryFg("TextString","#000080")
 app.addLabelOptionBox("SHA", ["256", "384", "512"])
-app.setOptionBoxBg("SHA","#e0d6b4")
+app.setOptionBoxBg("SHA","#CDDDEE")
+app.setOptionBoxFg("SHA","#000080")
 app.addLabelOptionBox("NumberSystem", ["Hex", "Base64", "Base58"])
-app.setOptionBoxBg("NumberSystem","#e0d6b4")
+app.setOptionBoxBg("NumberSystem","#CDDDEE")
+app.setOptionBoxFg("NumberSystem","#000080")
 app.addLabel("restrictDigits", "Restrict the Number of Output Digits?")
 app.addRadioButton("restrictDigitsYN", "Yes")
 app.addRadioButton("restrictDigitsYN", "No")
@@ -132,12 +136,22 @@ app.addLabel("restrictDigitScaleText", "Number of Output Digits")
 app.addScale("restrictDigitScale")
 app.setScaleRange("restrictDigitScale", 1, 128, curr=128)
 app.showScaleValue("restrictDigitScale", show=True)
-app.setScaleBg("restrictDigitScale","#e0d6b4")
+app.setScaleBg("restrictDigitScale","#CCDDEE")
+app.setScaleFg("restrictDigitScale","#000080")
 app.addLabel("calcResult", "Calc Result")
 app.addTextArea("calcResultMessage")
 app.setTextArea("calcResultMessage", "Push the Calc Button to See the Result")
-app.setTextAreaBg("calcResultMessage","#e0d6b4")
+app.setTextAreaBg("calcResultMessage","#CCDDEE")
+app.setTextAreaFg("calcResultMessage","#000080")
 app.addButtons(["Calculate", "Copy Result", "About", "Exit"], press)
+app.setButtonBg("Calculate","#000080")
+app.setButtonFg("Calculate","#CCDDEE")
+app.setButtonFg("Copy Result","#CCDDEE")
+app.setButtonBg("Copy Result","#000080")
+app.setButtonFg("About","#CCDDEE")
+app.setButtonBg("About","#000080")
+app.setButtonFg("Exit","#CCDDEE")
+app.setButtonBg("Exit","#000080")
 app.setFocus("TextString")
 
 
