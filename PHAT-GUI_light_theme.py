@@ -53,7 +53,7 @@ app.setFont(10)
 #-----------------------------------------------------------------
 # If using python and appjar in Windows uncomment the setIcon line
 # If using any other OS comment out the setIcon line
-app.setIcon("padlock.ico")
+# app.setIcon("padlock.ico")
 #
 #
 #-----------------------------------------------------------------
